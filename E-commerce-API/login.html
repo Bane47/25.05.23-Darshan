@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="shortcut icon" href="./Assets/images/AttireLogo.png" type="image/x-icon">
+
+    
+  <script src="./Assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./Assets/css/bootstrap.min.css">
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+
+  <!-- MDB -->
+  <script type="text/javascript" src="./Assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="MDB/css/mdb.min.css">
+  <!-- Custom scripts -->
+  <script src="MDB/js/mdb.min.js"></script>
+  <script type="text/javascript"></script>
+
+  <link rel="stylesheet" href="/E-commerce-API/./Assets/css/styling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="./Assets/js/login.js"></script>
+
+    <link rel="stylesheet" href="./Assets/css/styling.css">
+
+</head>
+<body class="login">
+    <div class="col-lg-6 container shadow rounded mt-5 loginBox">
+    <!-- Pills navs -->
+<ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a
+        class="nav-link active"
+        id="tab-login"
+        data-mdb-toggle="pill"
+        href="#pills-login"
+        role="tab"
+        aria-controls="pills-login"
+        aria-selected="true"
+        >Login</a
+      >
+    </li>
+    <li class="nav-item" role="presentation">
+      <a
+        class="nav-link"
+        id="tab-register"
+        data-mdb-toggle="pill"
+        href="#pills-register"
+        role="tab"
+        aria-controls="pills-register"
+        aria-selected="false"
+        >Register</a
+      >
+    </li>
+  </ul>
+  <!-- Pills navs -->
+  
+  <!-- Pills content -->
+  <div class="tab-content">
+    <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+      <form class="needs-validation" onsubmit="login()">
+        
+  
+         <!-- Email input -->
+        <div class="form-outline mb-4 needs-validation">
+          <input type="text" id="username" class="form-control"  required/>
+          <label class="form-label" for="username">Username</label>
+        </div>
+  
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+          <input type="password" id="password" class="form-control" required/>
+          <label class="form-label" for="password">Password</label>
+        </div>
+  
+        <!-- 2 column grid layout -->
+        <div class="row mb-4">
+          <div class="col-md-6 d-flex justify-content-center">
+            <!-- Checkbox -->
+            <div class="form-check mb-3 mb-md-0">
+              <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked/>
+              <label class="form-check-label" for="loginCheck"> Remember me </label>
+            </div>
+          </div>
+  
+          <div class="col-md-6 d-flex justify-content-center">
+            <!-- Simple link -->
+            <a href="#!">Forgot password?</a>
+          </div>
+        </div>
+  
+        <!-- Submit button -->
+        <button type="submit"  data-mdb-toggle="modal" data-mdb-target="#exampleModal" class="btn btn-primary btn-block mb-4">Log in</button>
+  
+       
+        <!-- Register buttons -->
+        <div class="text-center">
+          <p>Not a member? <a href="#!">Register</a></p>
+        </div>
+      </form>
+    </div>
+    <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+      <form class="row g-3 was-validated needs-validation" onsubmit="signin()" >
+        <div class="col-lg-4">
+          <div class="form-outline">
+            <input type="text" class="form-control" id="name"  required />
+            <label for="name" class="form-label">Name</label>
+            <div class="invalid-feedback">Looks good!</div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 col-lg-4">
+          <div class="input-group form-outline">
+            <input type="text" class="form-control" id="uname" aria-describedby="inputGroupPrepend" required />
+            <label for="uname" class="form-label">Username</label>
+            <div class="invalid-feedback">Please choose a username.</div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="form-outline">
+            <input type="text" class="form-control" id="email" required />
+            <label for="email" class="form-label">Email</label>
+            <div class="invalid-feedback">Please provide a valid Email</div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="form-outline">
+            <input type="text" class="form-control" id="pwd" required />
+            <label for="pwd" class="form-label">Password</label>
+            <div class="invalid-feedback">Please provide a password</div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="form-outline">
+            <input type="text" class="form-control" id="repwd" required />
+            <label for="repwd" class="form-label">Confirm Password</label>
+            <div class="invalid-feedback">Please confirm the password</div>
+          </div>
+        </div>
+        
+        <div class="col-lg-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
+            <label class="form-check-label" for="invalidCheck">Agree to terms and conditions</label>
+            <div class="invalid-feedback">You must agree before submitting.</div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <button type="submit"   class="btn btn-primary  btn-block mb-3 col-lg-3">Sign in</button>
+        </div>
+      </form>
+    </div>
+  </div>
+   <!-- Pills content -->
+
+   <!-- modal content  -->
+   <!-- Button trigger modal -->
+
+<!-- Modal -->
+<!-- <div id="modaldiv"></div> -->
+
+<script>(function () {
+  'use strict';
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation');
+
+  // Loop over each form and prevent submission
+  Array.prototype.slice.call(forms).forEach(function (form) {
+    form.addEventListener('submit', function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      } else {
+        // Additional custom validations
+        if (form.id === 'loginForm') {
+          // Validate login form
+          var username = document.getElementById('username').value;
+          var password = document.getElementById('password').value;
+
+          if (username.trim() === '') {
+            displayErrorMessage('username', 'Please enter a username.');
+            event.preventDefault();
+            event.stopPropagation();
+          } else {
+            removeErrorMessage('username');
+          }
+
+          if (password.trim() === '') {
+            displayErrorMessage('password', 'Please enter a password.');
+            event.preventDefault();
+            event.stopPropagation();
+          } else if (password.length < 8) {
+            displayErrorMessage('password', 'Password must be at least 8 characters long.');
+            event.preventDefault();
+            event.stopPropagation();
+          } else {
+            removeErrorMessage('password');
+          }
+        } else if (form.id === 'registerForm') {
+          // Validate register form
+          var name = document.getElementById('name').value;
+          var username = document.getElementById('uname').value;
+          var email = document.getElementById('email').value;
+          var password = document.getElementById('pwd').value;
+          var confirmPassword = document.getElementById('repwd').value;
+
+          if (name.trim() === '') {
+            displayErrorMessage('name', 'Please enter your name.');
+            event.preventDefault();
+            event.stopPropagation();
+          } else {
+            removeErrorMessage('name');
+          }
+
+          if (username.trim() === '') {
+            displayErrorMessage('uname', 'Please choose a username.');
+            event.preventDefault();
+            event.stopPropagation();
+          } else {
+            removeErrorMessage('uname');
+          }
+
+          if (email.trim() === '') {
+            displayErrorMessage('email', 'Please enter a valid email.');
+            event.preventDefault();
+            event.stopPropagation();
+          } else {
+            removeErrorMessage('email');
+          }
+
+          if (password.trim() === '') {
+            displayErrorMessage('pwd', 'Please enter a password.');
+            event.preventDefault();
+            event.stopPropagation();
+          } else if (password.length < 8) {
+            displayErrorMessage('pwd', 'Password must be at least 8 characters long.');
+            event.preventDefault();
+            event.stopPropagation();
+          } else {
+            removeErrorMessage('pwd');
+          }
+
+          if (confirmPassword.trim() === '') {
+            displayErrorMessage('repwd', 'Please confirm the password.');
+            event.preventDefault();
+            event.stopPropagation();
+          } else if (confirmPassword !== password) {
+            displayErrorMessage('repwd', 'Passwords do not match.');
+            event.preventDefault();
+            event.stopPropagation();
+          } else {
+            removeErrorMessage('repwd');
+          }
+        }
+      }
+
+      form.classList.add('was-validated');
+    }, false);
+  });
+
+  // Function to display error message
+  function displayErrorMessage(inputId, message) {
+    var input = document.getElementById(inputId);
+    var feedback = input.parentNode.querySelector('.invalid-feedback');
+    feedback.innerText = message;
+    input.classList.add('is-invalid');
+  }
+
+  // Function to remove error message
+  function removeErrorMessage(inputId) {
+    var input = document.getElementById(inputId);
+    var feedback = input.parentNode.querySelector('.invalid-feedback');
+    feedback.innerText = '';
+    input.classList.remove('is-invalid');
+  }
+})();
+</script>
+
+</body>
+</html>
+
