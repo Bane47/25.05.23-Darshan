@@ -190,34 +190,46 @@ details()
 }
 
 
-function login() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "http://localhost:3000/Logins");
-    xhttp.setRequestHeader("Content-type", "application/json;charset=utf-8");
-    xhttp.send();
+
+
+
   
-    xhttp.onreadystatechange = function () {
-      if (xhttp.readyState === 4 && xhttp.status === 200) {
-        const username = document.getElementById("username").value;
-        const password = document.getElementById("password").value;
-        const details = JSON.parse(xhttp.responseText);
-        let isAuthenticated = false; // Flag to track authentication status
-  
-        for (let i = 0; i < details.length; i++) {
-          if (details[i].username === username && details[i].password === password) {
-            isAuthenticated = true;
-            break; // Exit the loop since a match is found
-          }
+  function login() {
+    const userName = document.getElementById('username').value;
+    const userpass = document.getElementById('password').value;
+    const xmlParser = new XMLHttpRequest();
+    xmlParser.open("GET", "http://localhost:3000/Logins");
+    xmlParser.send();
+    var login = false
+    xmlParser.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            const objects = JSON.parse(this.responseText);
+            for (let object of objects) {
+                if (userName == object['username'] && userpass == object['password']) {
+                    const userXmlObj = new XMLHttpRequest();
+                    userXmlObj.open("PUT", `http://localhost:3000/Logins/${object['id']}`);
+                    userXmlObj.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+                    userXmlObj.send(
+                        JSON.stringify(
+                            {
+                                name :  object['name'],               
+                                uname: object['username'],
+                                email: object['email'],
+                                password: object['password'],
+                                logged: 1
+                            }
+                        )
+                    );
+                    login = true
+                    window.location.href="./Home.html";
+                    break;
+                }
+
+            }
+            if (!login) {
+                alert("Login Failed");
+            }
         }
-  
-        if (isAuthenticated) {
-          
-          window.location.href="./Home.html"
-          console.log("successful")
-        } else {
-          console.log("Unsuccessful");
-        }
-      }
-    };
-  }
-  
+
+    }
+}

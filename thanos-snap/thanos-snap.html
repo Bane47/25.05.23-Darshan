@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thanos Snap Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="style.css">
+
+<style>
+    .hide{
+        display:none
+    }
+</style>
+</head>
+<body>
+  <button id="snapButton">Snap!</button>
+  <div class="snap-container">
+    <div class="snap-item1"><img id="snap1" src="thanosidle.png" class="hid" alt=""></div>
+    <div class="snap-item2"><img id="snap2" src="snap-3.png" class="hid" alt=""></div>
+    <div class="snap-item3"> <img id="snap3" src="snap.png" class="hid" alt=""></div>
+    <div class="snap-item1"> <img id="snap3" src="snap.png" class="hie" alt=""></div>
+    <div class="snap-item3"> <img id="snap3" src="snap.png" class="hde" alt=""></div>
+    <div class="snap-item2"> <img id="snap3" src="snap.png" class="ide" alt=""></div>
+  </div>
+
+<div class="image-containr">
+  
+    <img id="image1" onclick="Snap()" src="thanosidle.png" class="hie" alt="">
+    <!-- <img id="image2" src="snap-3.png" class="hid" alt="">
+    <img id="image3" src="snap.png" class="hid" alt="">
+    <img id="image4" src="thanosidle.png" class="hide" alt=""> -->
+</div>
+<!-- <button id="button" onclick="Snap()">Snap</button> -->
+<script>
+
+    $(document).ready(function(){
+        
+
+    var images = ["thanosidle.png","snap-3.png","snap.png"];
+    var currentIndex = 0;
+        var count = 0;
+
+function Snap(){
+    if(count<3){
+    $('#image1').attr('src',images[currentIndex]);
+    $('#image2').attr('src','Image'+(currentIndex+1));
+    $('#image3').attr('src','Image'+(currentIndex+1));
+    currentIndex = (currentIndex + 1) % images.length;
+    count++;
+    setTimeout(Snap,2000);
+}
+setTimeout(function(){
+    $('.snap-item1').delay(1000).fadeOut();
+    $('.snap-item2').delay(5000).fadeOut();
+    $('.snap-item3').delay(8000).fadeOut();
+},6000)
+}
+
+Snap();
+
+
+})
+        // $('#image1').hide();
+        //     // $('#image1').show();
+           
+        //     $('#image2').hide();
+        //     // $('#image2').show();
+            
+        //     $('#image3').hide();
+        //     // $('#image3').show();
+        // setTimeout(function(){
+        //     $('#image1').delay(1000).show();
+        //     $('#image3').delay(8000).fadeOut();
+        //     $('#image2').delay(3000).fadeOut();
+           
+
+
+
+           
+        //     // $('#image4').delay(4000).fadeOut();
+        // },2000);
+       
+       
+        // });
+
+    //     $(document).ready(function() {
+    //     $('#snapButton').click(function() {
+    //       $('.snap-item').each(function() {
+    //         if (Math.random() < 0.5) {
+    //           $(this).addClass('fade');
+    //         }
+    //       });
+    //     });
+    //   });
+    // $(document).ready(function(){
+    //     $('#button').click(function(){
+    //         var images = $('#image-container img');
+    //         var delay =  1000;
+
+    //         images.each(function(index){
+    //             var image = $(this);
+    //             setTimeout(function(){
+    //                 image.fadeIn(500).delay(2000).fadeOut(500);
+    //             },index*delay);
+    //             });
+    //         });
+    //     });
+   
+</script>
+
+<script src="./thanos-snap.js"></script>
+</body>
+</html>

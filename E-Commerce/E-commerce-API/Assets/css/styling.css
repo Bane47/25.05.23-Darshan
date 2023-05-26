@@ -19,6 +19,10 @@
   font-family: avengers;
   src: url('../fonts/AVENGEANCE\ HEROIC\ AVENGER.ttf');
 }
+@font-face {
+  font-family: flash;
+  src: url('./E-commerce-API\Assets\fonts\Elements.ttf');
+}
 /* logout button  */
 
 /* login  */
@@ -36,7 +40,9 @@ nav{
 
 }
 
-
+.flash{
+  font-family: flash;
+}
 .categories{
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -47,7 +53,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 .comics{
   padding: 0px;
-  background-color: #121212;
+
   
 }
 #comicbook{
@@ -127,6 +133,10 @@ background-size: cover;
   /* clothes page card  */
 .dressclr{
   font-family: monospace;
+}
+
+.hcard{
+  box-shadow: none;
 }
 
 /* button  */

@@ -1,0 +1,18 @@
+.snap-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .snap-item {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: #f1f1f1;
+    transition: opacity 1s;
+  }
+  .snap-item.fade {
+    opacity: 0;
+  }
+
+  #snap1{
+    display: none;
+  }

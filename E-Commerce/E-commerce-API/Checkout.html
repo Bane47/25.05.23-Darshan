@@ -2,24 +2,41 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
-    <link rel="shortcut icon" href="./Assets/images/AttireLogo.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="shortcut icon" href="./Assets/images/AttireLogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
-    <script src="Assets/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="./Assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./Assets/css/bootstrap.min.css">
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <link rel="stylesheet" href="MDB/css/mdb.min.css">
+  <!-- Custom scripts -->
+  <script src="MDB/js/mdb.min.js"></script>
+  <script type="text/javascript"></script>
+
+  <link rel="stylesheet" href="./Assets/css/styling.css">
 </head>
 
 <body>
   <nav class="navbar shadow p-2">
     <div class="container-fluid">
-      <span><a href="./Home.html" class="navbar-brand p-4 text-white"><h3><img class="col-lg-1" src="Assets/images/AttireLogo.png" alt="">Attire</h3></a></span>
+      <span><a href="./Home.html" class="navbar-brand p-4 text-white">
+          <h3><img class="col-lg-1 col-sm-1 col-md-1" src="./Assets/images/AttireLogo.png" alt="">Attire</h3>
+        </a></span>
       <form class="d-flex input-group w-auto">
         <span>
           <a class="m-1 text-white" href="./comics.html">Comics</a>
@@ -27,111 +44,122 @@
           <a class="m-1 text-white" href="./playstation.html">Playstation</a>
           <a class="m-1 text-white" href="./Cart.html">Cart</a>
         </span>
-        <input type="search" class="ms-3 form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-        
+        <input type="search" class="ms-3 form-control rounded" placeholder="Search" aria-label="Search"
+          aria-describedby="search-addon" />
+
         <span class="input-group-text border-0" id="search-addon">
           <i class="fas fa-search"></i>
         </span>
       </form>
     </div>
   </nav>
-    <div class="container-fluid">
-        <div class="row justify-content-center container pt-3">
-            <div class="col-12 col-lg-11">
-                <div class="card card0 rounded-0">
-                    <div class="row">
-                        <div class="col-md-5 d-md-block d-none p-0 box">
-                            <div class="card rounded-0 border-0 col-lg-12  card1" id="bill">
-                            
-                                <div>
-                                    <h1 class="p-2 text-center">Payment Summary</h1>
-                                    <table class="table table-dark table-bordered container p-3 shadow">
-                                        <thead>
-                                          <tr>
-                                            <th class="fs-4">Item Name</th>
-                                            <th class="fs-4">Price ($)</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody id="itemBill"></tbody>
-                                        <tfoot class="alert-danger table-secondary">
-                                          <th class="fw-bolder">Total $</th>
-                                        <td id="amount"></td>
-                                        </tfoot>
-                                      </table>
-                                  </div>
-                            </div>
-                        </div>
 
-                        <div class="col-md-5  offset-2  col-sm-12 p-0 box ">
-                            <div class="card rounded-0 border-0 card2" id="paypage">
-                                <div class="form-card">
-                                    <h2 id="heading2" class="text-danger">Payment Method</h2>
-                                    <div class="radio-group row mb-4">
-                                        <div class='radio ' data-value="credit"><img
-                                                src=""
-                                                class="col-lg-5" ></div>
-                                        <div class='radio col-lg-3' data-value="paypal"><img
-                                                src="" class="col-lg-12"></div>
-                                        <br>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                          <label class="pay mt-3">Name on Card</label>
-                                          <input type="text" name="holdername" placeholder="Account Holder Name">
-                                        </div>
-                                      </div>
-                                      
-                                      <div class="row">
-                                        <div class="col-md-6">
-                                          <label class="pay">Card Number</label>
-                                          <input type="text" name="cardno" id="cr_no" placeholder="0000-0000-0000-0000" minlength="19" maxlength="19">
-                                        </div>
-                                        <div class="col-md-6">
-                                          <label class="pay mt-3">CVV</label>
-                                          <input type="password" name="cvcpwd" placeholder="&#9679;&#9679;&#9679;" class="placeicon" minlength="3" maxlength="3">
-                                        </div>
-                                      </div>
-                                      
-                                      <div class="row">
-                                        <div class="col-md-6">
-                                          <label class="pay">Expiration Date</label>
-                                          <input type="text" name="exp" id="exp" placeholder="MM/YY" minlength="5" maxlength="5">
-                                        </div>
-                                      </div>
-                                      
-                                      <button id="pay-button" class="btn btn-primary">Pay</button>
 
-                                      
-                                      
-                                    <div class="product-container">
-                                        <div class="product-image-container">
-                                        </div>
-                                        <div class="product-info-container">
+  <div class="container-fluid">
+    <div class="row justify-content-center container pt-3">
+      <div class="col-12 col-lg-11">
+        <div class="card card0 rounded-0">
+          <div class="row">
+            <div class="col-md-5 d-md-block d-none p-0 box">
+              <div class="card rounded-0 border-0 col-lg-12  card1" id="bill">
 
-                                            <div id="smart-button-container">
-                                                <div style="text-align: center;">
-                                                    <div id="paypal-button-container" class="col-lg-9 mt-4"></div>
-                                                </div>
-                                            </div>
-                                            <script src="https://www.paypal.com/sdk/js?client-id=AZkuVa3m-mADuH4iLiJ35JwBRZKN9bgQc9FkwbchSHGiV8erWu6ul_Nd-RGhPpFZp0qx2lc5HnYtpZli&enable-funding=venmo&currency=USD&vault=true&intent=capture"></script>
-                                            <script
-                                                src="https://www.paypal.com/sdk/js?client-id=AZkuVa3m-mADuH4iLiJ35JwBRZKN9bgQc9FkwbchSHGiV8erWu6ul_Nd-RGhPpFZp0qx2lc5HnYtpZli&enable-funding=venmo&currency=USD&vault=true&intent=capture"
-                                                data-sdk-integration-source="button-factory"></script>
-                                            <!-- <script type="text/javascript" src="./Assets/js/script.js"></script> -->
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div>
+                  <h1 class="p-2 text-center text-white">Payment Summary</h1>
+                  <table class="table table-dark table-bordered container p-3 shadow">
+                    <thead>
+                      <tr>
+                        <th class="fs-4">Item Name</th>
+                        <th class="fs-4">Price ($)</th>
+                      </tr>
+                    </thead>
+                    <tbody id="itemBill"></tbody>
+                    <tfoot class="alert-danger table-secondary">
+                      <th class="fw-bolder">Total $</th>
+                      <td id="amount"></td>
+                    </tfoot>
+                  </table>
                 </div>
+              </div>
             </div>
+
+            <div class="col-md-5  offset-2  col-sm-12 p-0 box ">
+              <div class="card rounded-0 border-0 card2" id="paypage">
+                <div class="form-card">
+                  <h2 id="heading2" class="text-danger">Payment Method</h2>
+                  <div class="radio-group row mb-4">
+                    <div class='col-lg-6' data-value="credit"><img
+                        src="data:image/png;base64,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"
+                        class="col-lg-6  mt-2"></div>
+                    <div class=' col-lg-6' data-value="paypal"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANsAAACkCAMAAAApKatmAAABCFBMVEX///8BQ5cCQ5cAQ5n8//7+/P/7/f6Ek7n///0ANpEAOpIANo7d4esANouZqcYARJX/rwAAPJFZbqnv+P4ARZNld6pqfa0AP5laW3Hw9vf2//7///n/swAAK47wrx4AO5oAL422xNTR2uSgtc8AIYkANpq9zdhCXJhRYpgiSptRX6AANYI1V501VKHn7fJJcKlDVnpcWndJV4YhS5NziLJcbZ2DfGTVpy3qsSbdoiG3kTpvaWvV7fUqSYp/cWaqiEmGm7k8UYiqjzT1uQ6XgFBkYW6MfVoAFYTcxIb9uTe70+j97c75y2lZeqT4+ur83J0sTnmijkT4wlRvcmO5mVL05KbOzrcAB4MJ3aOZAAAN9klEQVR4nO1cDXvbthEGCVoCKZkwbUoIRTPihyxZiUovFb02rb2p60fWps7Wbl3+/z/ZAQRBUh+OY0mOmodvnsiiCIB4ccDd4Q4SQg0aNGjQoEGDBg0aNGjQoEGDBg0aNGjQoEGDBgTwqfuwAt8n0DF0tEUTBrTAG2odHGDMDWT4W4y6AWPjRXb78GBHHiIttM2MIii6nJqHh445fRFxco+Hj+yOpWv44KDpumPZWzBDxLePsXaoYC/tbdZbPBt+agabQa0v4sdTM+xQO1y5YRrYj19w6ZWFD5SbDtywdZU+mlvX1Z9Abrqu33dv/U343MWMdh/P7VijdF+Uym5qm7ltvAWVXI11tuGmf/opuUFufE7ibbg5h7rcOLbkdnwQ3DZO2c+B2yZl8zlw23TjM+C2EYfDTZf/docD4pZjdw0eErfPWG67R8Ot4XZo2C03fe3btdcruK+AXhbQ15VdqavvnJte0ePL+rx2XXmv3n5on7aMaqPLjefXu5ab0uLL6lzfKNQNFerclInQ9fpT1jUuC+xTbiv3qhcrbw9fbuveqpG/F/fKrWxRL8tW6Kw8jr/shNsHXaWH+FN1WX6w7IqoVivuhtsDZPJxcntAWX2t3KoV9yu3ylp6lNwqUfDlsk8lN94Oc7DOmA7/JTBmeO7W+4Tx0JGwLI1iCtXUNS4DgtTVsGM5FsNTDqzDfUZrAUOsuZQxq6jurBmtXXGjf3n26tmzZ6/4i8SrL+fD2oBjrOuXpwoTxlw2Ka6uezNaFHYxs6zZaZaM45QjHtvZNRSvBQwxM6cvytbWRO93xA3rf/3q6+dLeP3Nt7c1buy4f3Mm4Q1syrAeDYrrs8xRhTtOzx57tYd5cTJhtcacLOqq1m7cVfdvV3LTb1/97e+vz89Pqjh//rdh5ZEUW0mRQCbE6w0xmxXpCLjuF9yc8CpKxWf8jmEQQgwD3mQXlY4zfaHI87T0rEp8t9wwdkz3u2//8T2wOz+RHM/PX38HeqCcSrNKZiWCNVWN2HdPHW5vmcZokuZ5dNJCIltBBM+055RPo9blgBT5bOIbKDPpcpB7l7abudrFyx+enwtWgtvJ+Y8w79QjO1mZpfUyU8NmVk688Vx0nXb08frHxbNSYVDNini6XXIDsUbBXrlhqrvuhfvTayW3k/OfmEuLUngalZXHXO2Zi/KDyBFds2hK/DUPIyiaqtVNXWdmoHKgQMTpmxVLsUturguqn2Lzy3/+fCIX3vk3rquSBuzSUOc1WosQa5QmZWtJyMfdwb+spYaQn1glNy1IkFE5/AFvX2r75AarANQ4xmH89tdcbCcnr2+VOaWhLYeaGCSdw7qiX5TTz2vzRCUOQNvkc81o1Y+H8EymehJzvHJK5rg71pawNbdlXwpmYGiTd/96fvK94PdvlmtneAlSPz/yAb1PAqjngG4pOpj2OyDH4UQoSP5/4PvoJrIXCzsZ34C6APJqPeFggdDSCQs7WM6XbcttxZWCy+HEMIy3P+eT8sehK4Vq3kGdnJuPZhZ8Zp2eqXnVnTjYBdEa8hqU4M0VNOZY2MHTS/vM61nl+IWrvR6PnoLbfHQGVsn/XSjM3wKNPxMcsjcxOjJysUFHeFkrQyojHYNUqDZXk5SgeG5qbMi4O4OdMLyeK/Osh4vVNZnOnaV04A7W24oLzEYR9Nl4JxbdVyHmvhRwm5FiuRF0bYqCi5JbBGyxdap6Q8gi4BqWCsAKG2LBjT/ScWPk5wPQUg14VybeObcV4OM7xE96+Zzc83yJYx20hKoZh9ygY5xIbmCl7QA0+0WvtOXGIuSWsbAfSkeCVwlmUdjtIx+lcVk+2PGcXMvNPR5wHi0uOVAm/DOKXdWLI5S7jliPkVheoM1bGdB1w76y5QaJJybWVvPpoIv1JPfHjvyjRJ3+IVG43I+9cAtyHsbb30/O/5NzM9uekls603lNPPV8X3Lz+HmOmtwI6JI3bOWwAExP5zqVdoJ4k3a5Yt2ljc5eYq809zeMFnr78/l/xUYHg4+kuNmOWKVsVurx1OE642ISFy6yOCGY0JAriCo/7p/ayM/ljbrv+2nRSPfK2v96o7r+IleILfLHyVcdbgStq24+/+AVnF5RURgFDliaNyOhkhj3yoiyA6hlT6iFhUrht0EpA7XZmepCFs5jKUNu/Z+AG6NzMSkNWPG/Pv+O7ylNmwhuXFdGDhMVwU+RUws8Lq4IwF+7S0npcMD2BnnJ6ZAPRS47HRrvLIoOEO+YdUqf2V5acPvg5jKqc0dRHPd99/W3DIMHMs7P/oJMvEyO72gsuwWkhZJzMT5WPpdogNNO7Vmh3XlECY/KNZmMwAlqETlokfskcjMzQY338o8fLjAd9gaKW+wwmGIwBd+nOTd+44obPLDejl7ZK0hraMR3x6yIpuDOVcn80hL2wBCWExRrfX+6l9grBm8KVNmR6N6730KNWoXDD0toEQgDQLU3UgkQUDpm0cTwOOZ0DKP6JO+O23EsAq7g3hTSjmF7y2ZSaRrkLPfK9L1wK/0vPI9Qvi32yf9uGbstlv8RSXO7rVM2KbQkQYP3hS6kbGS3oFjVqTJ8lB1ruR0371q5SwJiy3isLOgiyQ21zVov9hUzN0FPC7kRlF5bF+3SACQjofPA58+Kj8B3fFNUpZoT9uJB7UGE+IOZQ7m7iDsR8eVETicmGPIgklYDTIZe8wH3xi3zCm5e2xx1ZR8NZLi5X0hpULoUXCkUNaG75rwdGyDx8rsHBI1NLlM+2XMq8JJgcKQZHzfJbTzlvuueuJVgk26+DYNZaQcT2R+fxzXy2BClo8Lnh1vZRdU+UxZMFjHJAyESXh+ExGgnIYWK8TKHax+Y2rklh1GcMVrp0b644XAst6EGiUQAQHjEsAOQUT2qdwpdDrcm9Q285jqdedYVtWWhFlhAENuk7G78hc71CxsN1JnrK+Y+Cbd8i8VHPr5Kc7tNBmg8z+02jPdtGV8cTGvjDZYaM9bpJPmazTHuMOZWgkdG0pm7rjt3w3LzbtfEv7dcvnOVdx2WWBr5ck9qGJnpSm4Xd2X87gZLbvIej6XA2/c2KMyiTAxiqwZYxOIVQGrzPg6qvvW+uOla2FWukydXDYhQhX9BsOUp8MgdUgzmvOiYyHqCtXZvSv0aC5egDABVglzqnTeSG77d54RrCJLl8tAHu4zDBUlpnm0dBEWtjkZdNe5gptxhRUxj8LnNDWFZhVsmue0+J1yCUuXlV7ilV8r/0MJKPzMefWaXV2/CitcEYz/31HQzkkBY+/u/kZaF9CnkhjsIGfUKfhSohBzsw1UvjZ4DXQrbXpx1RlyPinQiC9/f+IUtQ612QN8oM72BoJ+M3D3IrfB0ZOALUxfsV929ALcwVDV4mkPF7y4dpmsj7iUPoux2Op3qeDq9VYkacBhJekyHc/TuqCBrkAoUt3RUUbg75KamkmgXJl0bLX3ZJw7KJ3P/vbgbz3j8ZPSLlEcaj6NoDH5XWdtHdqCNeDRJNOn79cAr33KIv968ElfYl9x4QGpm+PW4dhaUFUK7jOdHU64Vna7MTKklVqmcvmTWPPVVwMGroSW5odZdGXze51k1qt+QqsomZyEtVUUnUW4gsk3YFzg8XC5mmky6Ebm5468euDOB7asqcdavIJPW2+D+3ZNw0zC4Wir0AT6JXZmS2JWxANjmtdomqEmZiyvdY/mXG2cv62A2ryQmFx2n8jVFSzowYMXjkVwYe9WToC7uKgrNIN7LSmme5hC8jwyS9k2tmgqogfc57V/A/Uoe0usNqycgwBMrpkDXZU/CjU0q39EyUGJV7lm9VHJDfnfCwOcKo/WKnXiRG1B3OK8EG6Jp7cxCp58W5Pg4aXu23WLeTcuYJOwBrqvczL5RdMePXaxj5thp7lDXvao0uguGsLuxep5qDCZx7ayJynURY7AIc7lpO8jj3EfOsY1BARjrallrgaSna/iRyQM92L1uJ7F0sHOGRhrZPcfUdXCc3aQoD873xKmFtDCOwJTyOwOUdMqP98kNz657BfoTXNt/zPq9Qs1NuE2CXY3VobPTfttOojEgsbPei7nTwbqYYfi0r9o6pZjWuDmT/p14CNzbg+1eT244lKeSrCGrcdOoY/GDTpYzHIokPo9jgU3kxS0GZJjFho7Iv+Un3ajmlMC4HoqkTD7HsnZ4nuteuYFXT+VZM31pqIEGFm4jaEgVMuZ5NihZwAWr57qSGxYHxGRjPExbH0TRGGxeNbZPuS2lvzff4ZzqaRrea73aZq39YgiqjdWaXG5v59w+eJawUvBB5ZYbX3e2cP31vuV2Tz8f892b5UOm6w/PSzRy+xi5PQUeJvM/KbcHCf1Pyu1zltuDSv05uT0MDbeG26Gh4fYx3B7hSe0Jn87n2j8auX0Mt4dC+BZ7HYhPyO0B3xvbDp9Ubrv9+YQVNHLbyO0Afuhpo+zpVtzmbPU48dNjg/Cxy9zHc0v75kFw2/Axvbh7/G/GGUm45hz4k2Ot3LCGabhyUuJjBHcKgpPJosrXy5ev195a/6MPHy677mvs+poWXWpOHj8lkU8iR32Fdd3PASxjw+fapjbWNvIAYOy62KTRhylsxhEaT4dMp/jgoDvD6XjjUY2HwCAozSZTnrI4LNDpJEvLs/iPQD4s3cg+OCQRP5+4DbfPHgY/FC4O8ouf2TbED1KT4iX/ZPWF5Gf/y3rrK5D8RbWIluqtaxdejG0WWgn+FHJ0aECbj3x9DDek8taHhOUvozZo0KBBgwYNGjRo0KBBgwYNGjRo0KBBgwbb4v8nK1i4a0vdWgAAAABJRU5ErkJggg=="
+                        class="col-lg-7" ></div>
+                    <br>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label class="pay mt-3">Name on Card</label>
+                      <input type="text" name="holdername" placeholder="Account Holder Name">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label class="pay">Card Number</label>
+                      <input type="text" name="cardno" id="cr_no" placeholder="0000-0000-0000-0000" minlength="19"
+                        maxlength="19">
+                    </div>
+                    <div class="col-md-6">
+                      <label class="pay mt-3">CVV</label>
+                      <input type="password" name="cvcpwd" placeholder="&#9679;&#9679;&#9679;" class="placeicon"
+                        minlength="3" maxlength="3">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label class="pay">Expiration Date</label>
+                      <input type="text" name="exp" id="exp" placeholder="MM/YY" minlength="5" maxlength="5">
+                    </div>
+                  </div>
+
+
+
+
+
+                  <div class="product-container">
+                    <div class="product-image-container">
+                    </div>
+                    <div class="product-info-container">
+
+                      <div id="smart-button-container">
+                        <div style="text-align: center;">
+                          <div id="paypal-button-container" class="col-lg-9 mt-4">
+                            Hello
+                          </div>
+                        
+                          
+                        </div>
+                      </div>
+                      <script src="https://www.paypal.com/sdk/js?client-id=ARq-E9-aixKCDVjB80RyRLsu8127Eg_1Oo8u_OcYYUETiQPo9M0y0bn7Q2GxTPdt6lqf3H7PubiHEiO0&currency=USD" data-sdk-integration-source="button-factory"></script>
+
+                      <!-- <script
+                        src="https://www.paypal.com/sdk/js?client-id=ARBgwl30c0BWV_Eud4HTWob59tQRqbBxH9ETxtLJQaDpoYA9i0mVFZhhU3MY2Z9cJTjst5XYDkTQl05U&enable-funding=venmo&currency=USD&vault=true&intent=capture"
+                        ></script> -->
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 
 
-    <script src="./Assets/js/checkout.js"></script>
+  <script src="./Assets/js/checkout.js"></script>
 
 </body>
+
 </html>

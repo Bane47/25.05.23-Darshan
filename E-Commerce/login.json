@@ -5,28 +5,32 @@
       "username": "Darshan",
       "email": "priyadarshanmanohraran@gmail.com",
       "password": "Password123",
-      "id": 1
+      "id": 1,
+      "logged":0
     },
     {
       "name": "Srikanth",
       "username": "me!",
       "email": "srikanth@dmail.com",
       "password": "sivajivailajilebi",
-      "id": 2
+      "id": 2,
+      "logged":0
     },
     {
       "name": "God",
       "username": "Thunder",
       "email": "darshan@g2technologies.com",
       "password": "oooooooo",
-      "id": 3
+      "id": 3,
+      "logged":0
     },
     {
       "name": "ArulSeeli",
       "username": "Darshan",
       "email": "priyadarshanmanoharan@gmail.co",
       "password": "Password123",
-      "id": 4
+      "id": 4,
+      "logged":0
     }
   ],
   "clothes": [
