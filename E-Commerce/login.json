@@ -5,13 +5,12 @@
       "uname": "Darshan",
       "email": "priyadarshanmanohraran@gmail.com",
       "password": "Password123",
-      "logged": 0,
-      "id": 1,
-      "cart": []
+      "logged": 1,
+      "id": 1
     },
     {
       "name": "Srikanth",
-      "username": "me!",
+      "uname": "me!",
       "email": "srikanth@dmail.com",
       "password": "sivajivailajilebi",
       "id": 2,
@@ -19,7 +18,7 @@
     },
     {
       "name": "God",
-      "username": "Thunder",
+      "uname": "Thunder",
       "email": "darshan@g2technologies.com",
       "password": "oooooooo",
       "id": 3,
@@ -30,7 +29,7 @@
       "uname": "thangam",
       "email": "priyadarshanmanoharan@gmail.co",
       "password": "Password123",
-      "logged": 1,
+      "logged": 0,
       "id": 4
     }
   ],

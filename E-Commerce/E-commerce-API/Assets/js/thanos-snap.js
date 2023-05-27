@@ -11,14 +11,19 @@ $('#image1').attr('src',images[currentIndex]);
 currentIndex = (currentIndex + 1) % images.length;
 count++;
 setTimeout(Snap,1000);
+
 }
-$('body').css("filter",'grayscale(100%)');
-setTimeout(function() {
-    $('body').css('filter', 'none'); /* Remove the filter effect after one second */
-  }, 1000);
+if(count==3){
+    $('body').css("filter",'brightness(500%)');
+    setTimeout(function() {
+        $('body').css('filter', 'none'); /* Remove the filter effect after one second */
+      }, 1000);
+}
+
 
 
 setTimeout(function(){
+    
     // event.preventDefault();
     // var target = $(this.getAttribute('href'));
     var targetSection = $('#fade1');
@@ -27,6 +32,7 @@ setTimeout(function(){
             scrollTop : targetSection.offset().top
         },500);
     }
+    
 
 $('.snap-item1').delay(2000).fadeOut(3000);
 var targetSection = $('#fade2');

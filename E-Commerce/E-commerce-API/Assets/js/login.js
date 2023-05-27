@@ -116,27 +116,6 @@
 })();
 
 
-
-// // for bootstrap validation 
-// (function () {
-//   'use strict';
-
-//   // Fetch all the forms we want to apply custom Bootstrap validation styles to
-//   var forms = document.querySelectorAll('.needs-validation');
-
-//   // Loop over each form and prevent submission
-//   Array.prototype.slice.call(forms).forEach(function (form) {
-//       form.addEventListener('submit', function (event) {
-//           if (!form.checkValidity()) {
-//               event.preventDefault();
-//               event.stopPropagation();
-//           }
-
-//           form.classList.add('was-validated');
-//       }, false);
-//   });
-// })();
-
 function details(){
         // creating a http request using XMLHttpRequest
 
@@ -205,7 +184,7 @@ details()
         if (this.readyState == 4 && this.status == 200) {
             const objects = JSON.parse(this.responseText);
             for (let object of objects) {
-                if (userName == object['username'] && userpass == object['password']) {
+                if (userName == object['uname'] && userpass == object['password']) {
                     const userXmlObj = new XMLHttpRequest();
                     userXmlObj.open("PUT", `http://localhost:3000/Logins/${object['id']}`);
                     userXmlObj.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
@@ -213,7 +192,7 @@ details()
                         JSON.stringify(
                             {
                                 name :  object['name'],               
-                                uname: object['username'],
+                                uname: object['uname'],
                                 email: object['email'],
                                 password: object['password'],
                                 logged: 1
@@ -252,7 +231,7 @@ function logout(){
                       JSON.stringify(
                           {
                               name :  object['name'],               
-                              uname: object['username'],
+                              uname: object['uname'],
                               email: object['email'],
                               password: object['password'],
                               logged: 0
