@@ -233,3 +233,42 @@ details()
 
     }
 }
+
+
+function logout(){
+  const xmlParser = new XMLHttpRequest();
+  xmlParser.open("GET", "http://localhost:3000/Logins");
+  xmlParser.send();
+  var login = true;
+  xmlParser.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+          const objects = JSON.parse(this.responseText);
+          for (let object of objects) {
+           
+                  const userXmlObj = new XMLHttpRequest();
+                  userXmlObj.open("PUT", `http://localhost:3000/Logins/${object['id']}`);
+                  userXmlObj.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+                  userXmlObj.send(
+                      JSON.stringify(
+                          {
+                              name :  object['name'],               
+                              uname: object['username'],
+                              email: object['email'],
+                              password: object['password'],
+                              logged: 0
+                          }
+                      )
+                  );
+                  login = false
+                  window.location.href="./login.html";
+                  break;
+              }
+
+          }
+          if (!login) {
+              alert("Logged off");
+          }
+      }
+
+  }
+

@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Comics</title>
   <link rel="shortcut icon" href="./Assets/images/AttireLogo.png" type="image/x-icon">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
 
   <script src="./Assets/js/bootstrap.min.js"></script>
@@ -40,42 +42,34 @@
 
  
 
- <style>
-  .card {
-  /* Card styles */
-  width: 200px;
-  height: 300px;
-  background-color: #f1f1f1;
-  transition: transform 0.3s ease;
-}
+ 
+ <script src="./Assets/js/thanos-snap.js"></script>
 
-.card:hover {
-  /* Animation styles */
-  transform: scale(1.1);
-}
- </style>
 </head>
 
 <body>
   <nav class="navbar shadow p-2">
     <div class="container-fluid">
       <span><a href="./Home.html" class="navbar-brand p-4 text-white"><h3><img class="col-lg-1 col-md-1 col-sm-1 col-1" src="Assets/images/AttireLogo.png" alt="">Attire</h3></a></span>
-      <form class="d-flex input-group w-auto">
+      
         <span>
           <a class="m-1 text-white" href="./comics.html">Comics</a>
-          <a class="m-1 text-white" href="./Clothes.html">Trends</a>
+          <a class="m-1 text-white snap-item1" href="./Clothes.html">Trends</a>
           <a class="m-1 text-white" href="./playstation.html">Playstation</a>
           <a class="m-1 text-white" href="./Cart.html">Cart</a>
+          <img id="image1" onclick="Snap()" src="./Assets/images/thanosidle.png" alt="">
         </span>
-        <input type="search" class="ms-3 form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
         
-        <span class="input-group-text border-0" id="search-addon">
-         <img src="https://elgoog.im/thanos/img/thanos_idle.png" alt="">
-        </span>
-      </form>
-    </div>
-  </nav>
+        
+      
+       
 
+      
+   
+    </div>
+    
+  </nav>
+  
   <!-- carousel  -->
   <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -83,8 +77,8 @@
         <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/b0/6464cbd99b5d0.jpg" class="d-block w-100 comicscarousel"
           alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h2>'AMAZING SPIDER-MAN' #26</h2>
-            <h1 class="display-3">
+            <h2 class="snap-item1">'AMAZING SPIDER-MAN' #26</h2>
+            <h1 class="display-3 snap-item2" id="fade3">
               THE MARVEL UNIVERSE MOURNS ONE OF ITS BRIGHTEST STARS</h1>
           </div>
       </div>
@@ -117,15 +111,15 @@
   </div>
 
 
-  <div class="container-fluid p-5 text-bg-info text-center">
-    <H1>Take A look at the infinite Entertainment!</H1>
+  <div id="takelook" class="container-fluid text-bg-info text-center">
+    <H1 class="snap-item1 mx-5 px-5" id="fade1">Take A look at the infinite Entertainment!<span class="text-white"> Enter into the world!!!!</span></H1>
   </div>
 
   <div id="comicsCard"></div>
 
   <div>
     <a class="btnCart mx-auto" href="./Checkout.html" >
-      <span>Pay</span>
+      <span class="snap-item3" id="fade3">Pay</span>
       <div class="container">
         <i class="fa-solid fa-sack-dollar"></i>
           </div>
@@ -149,7 +143,7 @@
   
         <!-- Twitter -->
         <a
-          class="btn text-white btn-floating m-1"
+          class="btn text-white btn-floating m-1 snap-item3"
           style="background-color: #55acee;"
           href="#!"
           role="button"

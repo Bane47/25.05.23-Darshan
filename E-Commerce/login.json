@@ -2,11 +2,12 @@
   "Logins": [
     {
       "name": "Priyadarshan",
-      "username": "Darshan",
+      "uname": "Darshan",
       "email": "priyadarshanmanohraran@gmail.com",
       "password": "Password123",
+      "logged": 0,
       "id": 1,
-      "logged":0
+      "cart": []
     },
     {
       "name": "Srikanth",
@@ -14,7 +15,7 @@
       "email": "srikanth@dmail.com",
       "password": "sivajivailajilebi",
       "id": 2,
-      "logged":0
+      "logged": 0
     },
     {
       "name": "God",
@@ -22,15 +23,15 @@
       "email": "darshan@g2technologies.com",
       "password": "oooooooo",
       "id": 3,
-      "logged":0
+      "logged": 0
     },
     {
       "name": "ArulSeeli",
-      "username": "Darshan",
+      "uname": "thangam",
       "email": "priyadarshanmanoharan@gmail.co",
       "password": "Password123",
-      "id": 4,
-      "logged":0
+      "logged": 1,
+      "id": 4
     }
   ],
   "clothes": [
@@ -243,6 +244,20 @@
       "name": "Wolverine",
       "description": "Marvel's Midnight Suns for PS4™",
       "price": 220
+    },
+    {
+      "id": 13,
+      "photo": "https://wallpapercave.com/wp/5WChazv.jpg",
+      "name": "Avengers",
+      "description": "Avengers infinity Wars",
+      "price": 100
+    },
+    {
+      "id": 11,
+      "photo": "https://wallpapercave.com/wp/wp3892790.jpg",
+      "name": "Spider-Man",
+      "description": "Marvel's Spider-Man: Miles Morales",
+      "price": 120
     }
   ],
   "wishlist": [

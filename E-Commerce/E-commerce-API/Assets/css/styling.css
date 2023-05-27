@@ -40,6 +40,15 @@ nav{
 
 }
 
+#takelook{
+  height: 200px;
+
+}
+#fade1{
+  margin-top: 50px;
+  position: absolute;
+}
+
 .flash{
   font-family: flash;
 }

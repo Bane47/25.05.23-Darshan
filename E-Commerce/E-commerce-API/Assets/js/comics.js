@@ -8,7 +8,7 @@
             for(let i = 0; i<data.length;i+=5){
                 chtml +=      '<div class="container mt-3">'
         chtml +=   '<div class="row p-5">'
-        chtml +=  '<div class="card col-lg-2 container " >'
+        chtml +=  '<div class="card col-lg-2 container snap-item2" >'
         chtml +=   '<img src="'+data[i].poster+'" class="card-img-top link-offset-3-hover" alt="...">'
           chtml +=   '<h6 class="card-title">'+data[i].name+'</h6>'
           chtml +=       '<h6>Price:$'+data[i].price+'</h6>'
@@ -23,7 +23,7 @@
           chtml += '<button onclick="addToCart('+data[i+1].id+')" class="btn btn-danger col-lg-6 container"><i class="fa-solid fa-cart-plus align-item-center"></i></button>'
 
           chtml +=   '</div>'
-          chtml +=   '<div class="card col-lg-2 container" >'
+          chtml +=   '<div class="card col-lg-2 container snap-item2" >'
           chtml +=     '<img src="'+data[i+2].poster+'" class="card-img-top" alt="...">'
           chtml +=   '<h6 class="card-title">'+data[i+2].name+'</h6>'
           chtml +=       '<h6>Price:$'+data[i+2].price+'</h6>'
@@ -37,7 +37,7 @@
           chtml += '<button onclick="addToCart('+data[i+3].id+')" class="btn btn-danger col-lg-6 container"><i class="fa-solid fa-cart-plus align-item-center"></i></button>'
 
           chtml +=   '</div>'
-          chtml +=   '<div class="card col-lg-2 container" >'
+          chtml +=   '<div class="card col-lg-2 container snap-item3" >'
           chtml +=     '<img src="'+data[i+4].poster+'" class="card-img-top" alt="...">'
           chtml +=    '<h6 class="card-title">'+data[i+4].name+'</h6>'
           chtml +=       '<h6>Price:$'+data[i+4].price+'</h6>'
