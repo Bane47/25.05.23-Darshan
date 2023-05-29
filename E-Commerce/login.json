@@ -13,8 +13,8 @@
       "uname": "me!",
       "email": "srikanth@dmail.com",
       "password": "sivajivailajilebi",
-      "id": 2,
-      "logged": 0
+      "logged": 0,
+      "id": 2
     },
     {
       "name": "God",
@@ -31,6 +31,22 @@
       "password": "Password123",
       "logged": 0,
       "id": 4
+    },
+    {
+      "name": "Satis Kumar",
+      "username": "Satis69",
+      "email": "sathiskumar@gmail.com",
+      "password": "satissatis",
+      "logged": 0,
+      "id": 5
+    },
+    {
+      "name": "nabeela",
+      "username": "nabi",
+      "email": "gamerztcl@gmail.com",
+      "password": "nabee",
+      "logged": 0,
+      "id": 6
     }
   ],
   "clothes": [
@@ -39,7 +55,7 @@
       "price": "20$",
       "size": "M",
       "photo": "https://www.redwolf.in/image/cache/catalog/sweatshirts/DTG/mechanical-bat-logo-sweatshirt-india-438x438.jpg",
-      "brand": "Mechanical Bat-Logo - Batman Official Hoodie",
+      "name": "Mechanical Bat-Logo - Batman Official Hoodie",
       "category": "REDWOLF HOODIE"
     },
     {
@@ -47,7 +63,7 @@
       "price": "23$",
       "size": "L",
       "photo": "https://www.redwolf.in/image/cache/catalog/sweatshirts/DTG/riri-williams-hoodie-india-438x438.jpg",
-      "brand": "Arc Reactor (Glow In The Dark) - Marvel Official Hoodie",
+      "name": "Arc Reactor (Glow In The Dark) - Marvel Official Hoodie",
       "category": "Iron Man"
     },
     {
@@ -55,7 +71,7 @@
       "price": "18$",
       "size": "M",
       "photo": "https://www.redwolf.in/image/cache/catalog/sweatshirts/DTG/spider-suits-art-hoodie-india-438x438.jpg",
-      "brand": "Spider-Man Logo - Marvel Official Hoodie",
+      "name": "Spider-Man Logo - Marvel Official Hoodie",
       "category": "REDWOLF HOODIE"
     },
     {
@@ -63,7 +79,7 @@
       "price": "13$",
       "size": "M",
       "photo": "https://www.redwolf.in/image/cache/catalog/sweatshirts/superman-black-suit-hoodie-india-2-438x438.jpg",
-      "brand": "Superman: The Black Suit - Justice League Official Hoodie",
+      "name": "Superman: The Black Suit - Justice League Official Hoodie",
       "category": "Avengers"
     },
     {
@@ -71,7 +87,7 @@
       "price": "15$",
       "size": "L",
       "photo": "https://www.redwolf.in/image/cache/catalog/sweatshirts/black-suit-mask-hoodie-india-438x438.jpg",
-      "brand": "Black Suit Mask - Marvel Official Hoodie",
+      "name": "Black Suit Mask - Marvel Official Hoodie",
       "category": "Avengers"
     },
     {
@@ -79,7 +95,7 @@
       "price": "17$",
       "size": "L",
       "photo": "https://www.redwolf.in/image/cache/catalog/sweatshirts/marvel-captain-america-mechanical-shield-sweatshirt-india-1-438x438.jpg",
-      "brand": "Captain America: Mechanical Shield - Marvel Official Hoodie",
+      "name": "Captain America: Mechanical Shield - Marvel Official Hoodie",
       "category": "Avengers"
     }
   ],
@@ -201,34 +217,10 @@
       "price": 2.25
     },
     {
-      "id": 15,
-      "poster": "https://cdn.marvel.com/u/prod/marvel/i/mg/5/a0/645111e2c5b2d/portrait_uncanny.jpg",
-      "name": "Avengers",
-      "price": 3.15
-    },
-    {
-      "id": 18,
-      "poster": "https://cdn.marvel.com/u/prod/marvel/i/mg/3/b0/6451109ee693d/portrait_uncanny.jpg",
-      "name": "X-Men",
-      "price": 1.11
-    },
-    {
-      "id": 21,
-      "poster": "https://cdn.marvel.com/u/prod/marvel/i/mg/f/f0/645111e3a0973/portrait_uncanny.jpg",
-      "name": "X-Men",
-      "price": 3.35
-    },
-    {
       "id": 22,
       "poster": "https://cdn.marvel.com/u/prod/marvel/i/mg/f/d0/645110734a2b8/portrait_uncanny.jpg",
       "name": "Predator",
       "price": 2.95
-    },
-    {
-      "id": 20,
-      "poster": "https://cdn.marvel.com/u/prod/marvel/i/mg/2/60/64511073a4ab2/portrait_uncanny.jpg",
-      "name": "Ghost Rider",
-      "price": 3.15
     },
     {
       "id": 14,
@@ -238,25 +230,11 @@
       "price": 90
     },
     {
-      "id": 12,
-      "photo": "https://cdn.wallpapersafari.com/3/24/ohXbLV.jpg",
-      "name": "Wolverine",
-      "description": "Marvel's Midnight Suns for PS4™",
-      "price": 220
-    },
-    {
       "id": 13,
       "photo": "https://wallpapercave.com/wp/5WChazv.jpg",
       "name": "Avengers",
       "description": "Avengers infinity Wars",
       "price": 100
-    },
-    {
-      "id": 11,
-      "photo": "https://wallpapercave.com/wp/wp3892790.jpg",
-      "name": "Spider-Man",
-      "description": "Marvel's Spider-Man: Miles Morales",
-      "price": 120
     }
   ],
   "wishlist": [
@@ -268,25 +246,19 @@
       "price": 90
     },
     {
-      "id": 12,
-      "photo": "https://cdn.wallpapersafari.com/3/24/ohXbLV.jpg",
-      "name": "Wolverine",
-      "description": "Marvel's Midnight Suns for PS4™",
-      "price": 220
-    },
-    {
-      "id": 11,
-      "photo": "https://wallpapercave.com/wp/wp3892790.jpg",
-      "name": "Spider-Man",
-      "description": "Marvel's Spider-Man: Miles Morales",
-      "price": 120
-    },
-    {
       "id": 13,
       "photo": "https://wallpapercave.com/wp/5WChazv.jpg",
       "name": "Avengers",
       "description": "Avengers infinity Wars",
       "price": 100
+    },
+    {
+      "id": 1,
+      "price": "20$",
+      "size": "M",
+      "photo": "https://www.redwolf.in/image/cache/catalog/sweatshirts/DTG/mechanical-bat-logo-sweatshirt-india-438x438.jpg",
+      "name": "Mechanical Bat-Logo - Batman Official Hoodie",
+      "category": "REDWOLF HOODIE"
     }
   ]
 }

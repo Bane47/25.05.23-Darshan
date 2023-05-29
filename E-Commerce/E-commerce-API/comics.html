@@ -36,68 +36,90 @@
 
 
   <!-- styling  -->
- <!-- sweetalert cdn -->
- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
- <link rel="stylesheet" href="./Assets/js/comics.js">
+  <!-- sweetalert cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <link rel="stylesheet" href="./Assets/js/comics.js">
 
- 
 
- 
- <script src="./Assets/js/thanos-snap.js"></script>
+
+
+  <script src="./Assets/js/thanos-snap.js"></script>
 
 </head>
 
 <body>
-  <nav class="navbar shadow p-2">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <span><a href="./Home.html" class="snap-item2 navbar-brand p-4 text-white"><h3><img class="col-lg-1 col-md-1 col-sm-1 col-1" src="Assets/images/AttireLogo.png" alt="">Attire</h3></a></span>
-      
-        <span>
-          <a class="m-1 text-white" href="./comics.html">Comics</a>
-          <a class="m-1 text-white snap-item1" href="./Clothes.html">Trends</a>
-          <a class="m-1 text-white" href="./playstation.html">Playstation</a>
-          <a class="m-1 text-white" href="./Cart.html">Cart</a>
-          <img id="image1" onclick="Snap()" src="./Assets/images/thanosidle.png" alt="">
-        </span>
-        
-        
-      
-       
+     
 
       
-   
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        
+        <ul class="navbar-nav me-auto ">
+          <span class="nav-link"><a href="./Home.html" class="navbar-brand p-4 text-white">
+            <h6 class="col-lg-4"><img class="col-lg-1 col-sm-1 col-md-1" src="https://swimburger.net/media/ppnn3pcl/azure.png" alt="">Attire</h3>
+          </a></span>
+          <li class="nav-item">
+            <a class="nav-link text-white mt-3" href="./comics.html">Comics</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link text-white mt-3" aria-current="page" href="./Clothes.html">Clothes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white mt-3" href="./playstation.html">Playstation</a>
+          </li>
+          <li >
+            <a class="nav-link text-white mt-3" href="./Cart.html">Cart</a>
+          </li>
+<li class="nav-item">
+  <img id="image1" onclick="Snap()" src="./Assets/images/thanosidle.png" alt="">
+</li>
+      
+        </ul>
+
+        
+      </span>
+
+
+
+
+      </div>
+
+
     </div>
-    
+
   </nav>
-  
+
+
+
   <!-- carousel  -->
   <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/b0/6464cbd99b5d0.jpg" class="d-block w-100 comicscarousel"
           alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h2 class="snap-item1">'AMAZING SPIDER-MAN' #26</h2>
-            <h1 class="display-3 snap-item2" id="fade3">
-              THE MARVEL UNIVERSE MOURNS ONE OF ITS BRIGHTEST STARS</h1>
-          </div>
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="snap-item1">'AMAZING SPIDER-MAN' #26</h2>
+          <h1 class="display-3 snap-item2" >
+            THE MARVEL UNIVERSE MOURNS ONE OF ITS BRIGHTEST STARS</h1>
+        </div>
       </div>
       <div class="carousel-item">
         <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/b/f0/6464cecad1f21.jpg "
           class="comicscarousel d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption d-none d-md-block">
           <h1>'AMAZING SPIDER-MAN' #26</h1>
-   <h1 class="display-3">THE MARVEL UNIVERSE MOURNS ONE OF ITS BRIGHTEST STARS</h1>
-  </div>
+          <h1 class="display-3 snap-item2">THE MARVEL UNIVERSE MOURNS ONE OF ITS BRIGHTEST STARS</h1>
+        </div>
       </div>
       <div class="carousel-item">
         <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/6/20/6464cca36c316.jpg" class="d-block w-100 comicscarousel"
           alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h1>'EDGE OF SPIDER-VERSE' #3</h1>
-     <h1 class="display-3">BREAKOUT HERO SPIDER-BOY SHARES HIS SENSATIONAL STORY</h1>
-    </div>
-    
+        <div class="carousel-caption d-none d-md-block">
+          <h1>'EDGE OF SPIDER-VERSE' #3</h1>
+          <h1 class="display-3">BREAKOUT HERO SPIDER-BOY SHARES HIS SENSATIONAL STORY</h1>
+        </div>
+
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -112,19 +134,24 @@
 
 
   <div id="takelook" class="container-fluid text-bg-info text-center">
-    <H1 class="snap-item1 mx-5 px-5" id="fade1">Take A look at the infinite Entertainment!<span class="text-white"> Enter into the world!!!!</span></H1>
+    <H1 class="snap-item1 mx-5 px-5" id="fade1">Take A look at the infinite Entertainment!<span class="text-white">
+        Enter into the world!!!!</span></H1>
   </div>
 
   <div id="comicsCard"></div>
 
   <div>
-    <a class="btnCart mx-auto" href="./Checkout.html" >
+    <a class="btnCart mx-auto" href="./Checkout.html">
       <span class="snap-item3" id="fade3">Pay</span>
       <div class="container">
         <i class="fa-solid fa-sack-dollar"></i>
-          </div>
-        </a>
+      </div>
+    </a>
   </div>
+
+
+
+
 
 
   <footer class=" text-center text-white p-2 mt-lg-5 mt-sm-5 mt-md-5">
@@ -133,62 +160,32 @@
       <!-- Section: Social media -->
       <section class="mb-4">
         <!-- Facebook -->
-        <a
-          class="btn text-white btn-floating m-1"
-          style="background-color: #3b5998;"
-          href="#!"
-          role="button"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-  
+        <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i
+            class="fab fa-facebook-f"></i></a>
+
         <!-- Twitter -->
-        <a
-          class="btn text-white btn-floating m-1 snap-item3"
-          style="background-color: #55acee;"
-          href="#!"
-          role="button"
-          ><i class="fab fa-twitter"></i
-        ></a>
-  
+        <a class="btn text-white btn-floating m-1 snap-item3" id="fade3" style="background-color: #55acee;" href="#!"
+          role="button"><i class="fab fa-twitter"></i></a>
+
         <!-- Google -->
-        <a
-          class="btn text-white btn-floating m-1"
-          style="background-color: #dd4b39;"
-          href="#!"
-          role="button"
-          ><i class="fab fa-google"></i
-        ></a>
-  
+        <a class="btn text-white btn-floating m-1 snap-item2" style="background-color: #dd4b39;" href="#!" role="button"><i
+            class="fab fa-google"></i></a>
+
         <!-- Instagram -->
-        <a
-          class="btn text-white btn-floating m-1"
-          style="background-color: #ac2bac;"
-          href="#!"
-          role="button"
-          ><i class="fab fa-instagram"></i
-        ></a>
-  
+        <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i
+            class="fab fa-instagram"></i></a>
+
         <!-- Linkedin -->
-        <a
-          class="btn text-white btn-floating m-1"
-          style="background-color: #0082ca;"
-          href="#!"
-          role="button"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
+        <a class="btn text-white btn-floating m-1 snap-item2" style="background-color: #0082ca;" href="#!" role="button"><i
+            class="fab fa-linkedin-in"></i></a>
         <!-- Github -->
-        <a
-          class="btn text-white btn-floating m-1"
-          style="background-color: #333333;"
-          href="#!"
-          role="button"
-          ><i class="fab fa-github"></i
-        ></a>
+        <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="#!" role="button"><i
+            class="fab fa-github"></i></a>
       </section>
       <!-- Section: Social media -->
     </div>
     <!-- Grid container -->
-  
+
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2020 Copyright:
@@ -196,7 +193,7 @@
     </div>
     <!-- Copyright -->
   </footer>
-  
+
 
 
 

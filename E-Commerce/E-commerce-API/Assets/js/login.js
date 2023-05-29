@@ -159,7 +159,8 @@ xhttp.send(
     name: name,
     username: username,
     email:email,
-    password:password
+    password:password,
+    logged:0
 })
 )
 
@@ -223,7 +224,7 @@ function logout(){
       if (this.readyState == 4 && this.status == 200) {
           const objects = JSON.parse(this.responseText);
           for (let object of objects) {
-           
+           if(object.logged==1){
                   const userXmlObj = new XMLHttpRequest();
                   userXmlObj.open("PUT", `http://localhost:3000/Logins/${object['id']}`);
                   userXmlObj.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
@@ -239,13 +240,15 @@ function logout(){
                       )
                   );
                   login = false
-                  window.location.href="./login.html";
+                  
                   break;
               }
+            }
 
           }
           if (!login) {
               alert("Logged off");
+              window.location.href="./login.html";
           }
       }
 

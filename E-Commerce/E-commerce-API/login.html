@@ -70,16 +70,16 @@
   <!-- Pills content -->
   <div class="tab-content">
     <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
-      <form class="needs-validation" onsubmit="login()">
+      <form class="needs-validation" onsubmit="login(); return false">
         
   
          <!-- Email input -->
-        <div class="form-outline mb-4 needs-validation">
-          <input type="text" id="username" placeholder="Username" class="form-control"  required/>
+        <div class="form mb-4 needs-validation">
+          <input  type="text" id="username" placeholder="Username" class="form-control"  required/>
         </div>
   
         <!-- Password input -->
-        <div class="form-outline mb-4">
+        <div class="form mb-4">
           <input type="password" id="password" placeholder="Password" class="form-control" required/>
           
         </div>
