@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas class="mycanvas"></canvas>
+
+    <script>
+         // Get the canvas element using querySelector
+         const canvas = document.querySelector(".mycanvas");
+  
+  if (canvas) {
+//           // Set the viewport width and height
+    const width = (canvas.width = window.innerWidth);
+    const height = (canvas.height = window.innerHeight);
+
+//           // Create the drawing area
+    const ctx = canvas.getContext("2d");
+
+    // To draw to the center of the canvas 
+    ctx.translate(width/2,height/2);
+
+    function degToRad(degrees){
+        return(degrees*Math.PI)/100;
+    }
+    function rand(min,max){
+        return Math.floor(Math.random()*(max-min+1))+min;
+    }
+
+    let length = 250;
+    let moveOffset = 20;
+        
+    for(let i=0;i<length;i++){
+        ctx.fillStyle = `rgba(${255-length},0,${255-length},0,9)`;
+        ctx.beginPath();
+        ctx.moveTo(moveOffset, moveOffset);
+ctx.lineTo(moveOffset + length, moveOffset);
+const triHeight = (length / 2) * Math.tan(degToRad(60));
+ctx.lineTo(moveOffset + length / 2, moveOffset + triHeight);
+ctx.lineTo(moveOffset, moveOffset);
+ctx.fill();
+
+length--;
+moveOffset += 0.7;
+ctx.rotate(degToRad(5));
+
+    }
+  }
+    </script>
+    
+</body>
+</html>

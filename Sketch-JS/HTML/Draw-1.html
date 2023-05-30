@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch-1</title>
+</head>
+<body>
+    <canvas id="mycanvas" width="200" height="200"></canvas>
+    <canvas id="canvas2" width="500" height="500"></canvas>
+    <script>
+
+        const canvas = document.getElementById("mycanvas")
+
+        const context2 = canvas.getContext("2d");
+
+
+        context2.fillStyle = "red";
+                    //width,height,pixels,pixels
+        context2.fillRect(50,50,1000,1000);
+
+        const canvas2 = document.getElementById("canvas2");
+        const context = canvas2.getContext("2d");
+
+        context.fillStyle = "blue";
+        context.strokeStyle = "yellow";
+        context.lineWidth = 30;
+
+
+        // drawing the circle 
+        const centerX = canvas2.width / 2;
+        const centerY = canvas2.width/2;
+        const radius = 50;
+        const startAngle = 0;
+        const endAngle = 2 * Math.PI;
+        const anticlockwise = false;
+
+        context.beginPath();
+        context.arc(centerX,centerY,radius, startAngle, endAngle, anticlockwise);
+        context.fill();
+        context.stroke();
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <canvas class="mycanvas"></canvas>
+
+    <script>
+        // Get the canvas element using querySelector
+        const canvas = document.querySelector(".mycanvas");
+  
+        if (canvas) {
+//           // Set the viewport width and height
+          const width = (canvas.width = window.innerWidth);
+          const height = (canvas.height = window.innerHeight);
+  
+//           // Create the drawing area
+          const ctx = canvas.getContext("2d");
+  
+          // Set the fill color and fill the entire canvas
+          ctx.fillStyle = "rgb(0, 0, 0)";
+          ctx.fillRect(15, 20, width, height);
+          //drawing the second rectangle
+          ctx.fillStyle = "rgb(124,256,100)";
+          ctx.fillRect(250,50,550,550);
+          //Drawing the third rect
+          ctx.fillStyle = "rgb(255,0,0)";
+          ctx.fillRect(300,100,450,450);
+        //   fourth rect 
+        ctx.fillStyle = "rgba(255,0,255,0.95)"
+        ctx.fillRect(350,150,350,350);
+
+// out line default width is 1px
+        ctx.strokeStyle = "rgb(0,0,0)";
+        ctx.strokeRect(425,225,175,200);
+        ctx.lineWidth = 5;
+        //   degree to radians 
+        function degToRad(degrees){
+            return (degrees * Math.PI)/100;
+        }
+        ctx.fillStyle = "rgb(255,255,0)";
+        ctx.beginPath();
+        ctx.moveTo(100,150);
+
+        ctx.fill();
+
+        // drawing a triangle 
+        ctx.fillStyle = "rgb(255,0,0)";
+        ctx.beginPath();
+        ctx.moveTo(50,50)
+
+        ctx.lineTo(150,50);
+        const triHeight = 50*Math.tan(degToRad(60));
+        ctx.lineTo(100,50+triHeight);
+        ctx.lineTo(50,50);
+        ctx.fill
+
+
+ctx.fillStyle = "rgb(0,0,255)";
+ctx.beginPath();
+// arc(position of the center x , y , radius , start angle , end angle , anticlockwise or clokcwise(true or false)  )
+ctx.arc(150,106,50,degToRad(0),degToRad(360),false);
+ctx.fill();
+
+ctx.fillStyle="yellow";
+ctx.beginPath();
+ctx.arc(200,106,50,degToRad(25),degToRad(-20),false);
+ctx.lineTo(200,106);
+
+ctx.fill();
+        
+
+        
+        }
+      </script>
+  </body>
+</html>
