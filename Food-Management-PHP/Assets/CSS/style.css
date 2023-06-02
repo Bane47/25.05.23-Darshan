@@ -1,0 +1,111 @@
+@font-face {
+	font-family: universal;
+	src: url(../Fonts/MercusuarThin-9Y1a2.ttf);
+}
+
+
+
+
+
+.section-1{
+	background-color: #121212;
+
+}
+#image-1{
+	filter: brightness(0.4);
+}
+.image-1{
+	background-image: url(../Images/Image-1-hands.webp);
+}
+.universal{
+	font-family: universal;
+}
+p{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card-1-image{
+	background-image: url(../Images/Child-poor.webp);
+	background-size: cover;
+}
+.card-2-image{
+	background-image: url(../Images/Elder-poor.webp);
+	background-size: cover;
+}
+.card-3-image{
+	background-image: url(../Images/Poor-number-In-india.webp);
+	background-size: cover;
+}
+.card-content{
+ background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 10px;
+
+  font-weight: bold;
+}
+
+
+/* payment buttons  */
+* {
+	box-sizing: border-box;
+  }
+  
+  body {
+	background-color: #f5f5f5;
+	font-family: Arial, sans-serif;
+  }
+  
+  .product-container {
+	max-width: 600px;
+	height: 500px;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  .product-image-container {
+	width: 30%;
+  }
+  
+  .product-info-container {
+	width: 70%;
+	padding-left: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+  }
+  
+  img {
+	width: 100%;
+	height: auto;
+  }
+  
+  .product-info-container form {
+	width: 100%;
+	margin-top: 20px;
+	align-self: flex-end;
+  }
+  
+  h1 {
+	margin-top: 0;
+  }
+  
+  .price {
+	color: #ff5722;
+	font-size: 1.5em;
+	font-weight: bold;
+  }
+  .fund{
+	background-image: url();
+	
+  }
+  #raise-fund-image{
+	filter: brightness(0.5);
+  }
+  .raise-fund-image{
+	background-color: black;
+  }

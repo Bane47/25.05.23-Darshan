@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animation</title>
+    <link rel="stylesheet" href="styling.css">
 </head>
-<body>
+<body >
     <canvas class="mycanvas">
         <p>Butterfly</p>
     </canvas>
@@ -22,8 +23,8 @@
 
 //           // Create the drawing area
     const ctx = canvas.getContext("2d");
-    ctx.fillStyle = "rgb(256, 256, 256)";
-          ctx.fillRect(15, 20, width, height);
+    // ctx.fillStyle = "rgb(256, 256, 256)";
+    //       ctx.fillRect(15, 20, width, height);
 
     // To draw to the center of the canvas 
     ctx.translate(width/2,height/2);
@@ -31,15 +32,15 @@ const image = new Image();
 image.src = "ButterFly.png";
 image.onload = draw;
 
-let sprite = 0;
-let posX = 0;
+let sprite = 0;  //frame
+let posX = 0;  //position at the X axis of the butterfly
 
 function draw(){
-    ctx.fillRect(-(width/2), -(height/2), width, height);
+    // ctx.fillRect(-(width/2), -(height/2), width, height);
     ctx.drawImage(image, sprite * 125, 120, 102, 148, posX, -74, 102, 148);
 
 
-    if(posX % 13 === 0){
+    if(posX % 12 === 0){
         if(sprite === 5){
             sprite = 0;
         } else {
