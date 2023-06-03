@@ -109,3 +109,9 @@ p{
   .raise-fund-image{
 	background-color: black;
   }
+  .global-warming{
+	background-image: url(../Images/earth.jpg);
+	background-size: cover;
+
+
+  }

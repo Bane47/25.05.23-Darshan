@@ -16,6 +16,10 @@ function drawChart(){
        chart:{
            title: 'Poverty Statistics in India',
            subtitle:'Poverty below poverty line: 2014-2020',
+        //    vAxis:{title:'Poverty'},
+        //    hAxis:{title:'Year'},
+        //    seriesType: 'bars',
+        //    series: {2: {type: 'line'}}
        },
        bars:'vertical'
        };

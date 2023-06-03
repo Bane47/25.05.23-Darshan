@@ -14,6 +14,7 @@
     <script src="../Bootstrap/js/bootstrap.min.js"></script>
     <script src="../API-integration/script.js"></script>
     <script src="../JS/raise-fund.js"></script>
+    <script src="../JS/contents.js"></script>
     <script type="text/javascript" src="../JS/api.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script>
@@ -87,7 +88,7 @@
                     <h5 class="card-title  card-content mt-5">Lack of Education</h5>
 
                     <a type="button" class="btn btn-primary" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal1">Read</a>
+                        data-bs-target="#exampleModal1" onclick="httpRequest(1,'section1cardp1');">Read</a>
                 </div>
             </div>
             <!-- Button trigger modal -->
@@ -103,12 +104,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <p>Limited education in India hinders progress and development. Despite efforts, millions
-                                lack quality education due to poverty, gender disparities, inadequate infrastructure,
-                                and limited resources. This affects individuals, communities, and the nation. Without
-                                education, opportunities for growth and empowerment are limited. It also hampers India's
-                                global competitiveness and innovation. Closing education gaps and ensuring universal
-                                access to quality schooling are vital for a brighter future.
+                            <p id="section1cardp1">
 
                             </p>
                         </div>
@@ -129,22 +125,9 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <p>
-                                Elderly poverty in India presents significant challenges. With limited finances and a
-                                lack of support, older individuals struggle to meet their basic needs. Inadequate
-                                pension schemes, limited healthcare access, and social isolation worsen their
-                                vulnerabilities. Many have worked hard but lack savings or social security benefits for
-                                their old age. Consequently, they face poverty, unable to afford healthcare, nutritious
-                                food, or decent housing. The absence of social support networks compounds their
-                                isolation and emotional distress. Recognizing their plight, targeted measures like
-                                increased social welfare programs, healthcare assistance, and community support can
-                                alleviate their hardships, ensuring they live their later years with dignity and
-                                security.
-
-
-
-
-                            </p>
+                            <p id="section-1-card-p2">
+                              
+                           </p>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -157,7 +140,7 @@
                 <div class="card-body mt-5 pt-5 ">
                     <h5 class="card-title card-content mt-5 ">Poor Elderly</h5>
                     <a type="button" class="btn btn-primary" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal2">Read</a>
+                        data-bs-target="#exampleModal2" onclick="httpRequest(2,'section-1-card-p2');">Read</a>
                 </div>
             </div>
             <div class=" card card-3-image col-lg-3 border-0">
@@ -165,7 +148,7 @@
                 <div class="card-body mt-5 pt-5 ">
                     <h5 class="card-title card-content mt-5">The Struggle Within</h5>
                     <a type="button" class="btn btn-primary" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal3">Read</a>
+                        data-bs-target="#exampleModal3" onclick="httpRequest(3,'section-1-card-p3');">Read</a>
                 </div>
             </div>
 
@@ -182,19 +165,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Poverty in India creates a challenging lifestyle with limited access to basic amenities,
-                        inadequate healthcare, substandard housing, and insufficient nutrition. Families struggle to
-                        make ends meet, living in overcrowded slums with poor sanitation. Lack of education and job
-                        opportunities perpetuates the cycle of poverty. Limited access to healthcare compromises
-                        well-being and increases vulnerability to diseases. Malnutrition and food insecurity hinder
-                        physical and cognitive development. Addressing poverty requires comprehensive efforts to enhance
-                        social safety nets, improve education and healthcare access, and foster inclusive economic
-                        growth. The goal is to uplift individuals and communities from destitution and provide a chance
-                        for a dignified and prosperous life.
-
-
-
-
+                    <p id="section-1-card-p3">
                     </p>
                 </div>
                 <div class="modal-footer">
@@ -206,7 +177,7 @@
 
     <div class="container mt-3">
 
-        <h1 class="Display-5">ProsperINDIA: Illuminating Pathways to a Poverty-Free Future</h1>
+        <h1 class="Display-2">ProsperINDIA: Illuminating Pathways to a Poverty-Free Future</h1>
         <p class="">
             "Help the Needy" is an initiative by the government aimed at enhancing the future of our nation. Poverty has
             been the biggest crisis to ever exist in the world. India has a poverty rate of 83.80% for 2019, which
@@ -231,7 +202,7 @@
 
 
         <!-- raise fund modal  -->
-        
+
     </div>
 
 
@@ -241,7 +212,7 @@
         <h3 class="display-2">Uplift The Illiterate</h3>
 
         <p>
-            Let us join hands, not as mere spectators of their plight, but as warriors of compassion and agents of
+                        Let us join hands, not as mere spectators of their plight, but as warriors of compassion and agents of
             change. Let us ignite the flames of education in their hearts, opening doors to a world where their dreams
             can take flight. Together, we can rewrite the narrative of their lives, transforming their stories of
             struggle into tales of triumph.
@@ -258,26 +229,141 @@
 
     <div id="Geochart" class="container col-lg-12"></div>
 
-    
 
 
-    <div class="container">
+
+    <!-- <div class="container">
         <h1 class="display-2">Apply to be a member</h1>
         <form action="">
 
         </form>
 
-    </div>
+    </div> -->
 
 
 
-    <div class="container">
+    <!-- <div class="container">
         <h2 class="display-2">Guide for the travellers</h2>
         <script>
-          
+
         </script>
-        
+
+    </div> -->
+
+
+    <div>
+
+        <!-- carousel  -->
+        <div id="carouselExampleFade" class="global-warming container-fluid carousel slide carousel-fade "
+            data-bs-ride="carousel">
+            <div class="carousel-inner ">
+                <div class="carousel-item active">
+                    <div class="row ">
+
+                        <img src="../Images/pollution.webp" class="col-lg-6  my-2" alt="...">
+                        <div class="col-lg-6 text-center  pt-2">
+
+                            <h1 class="display-2 text-white">Air's Silent Poison: Unveiling the Perils of Pollution</h1>
+
+
+
+
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row ">
+
+                        <img src="../Images/Polar-bear.webp" class="col-lg-6  my-2" alt="...">
+                        <div class="col-lg-6 text-center  pt-2">
+                            <h1 class="display-2 text-white">Frozen Dystopia: The Melting Symphony of Vanishing Glaciers
+                            </h1>
+
+
+                            <div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+
+                    <div class="row ">
+
+                        <img src="../Images/Deforestation.webp" class="col-lg-6 my-2 hover-zoom slide-in-up" alt="...">
+                        <div class="col-lg-6 text-center pt-2">
+                            <h1 class="display-2 text-white">Slashing the lungs:Improvement with the cost of oxygen!
+                            </h1>
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
     </div>
+    <div>
+        <h1 class="display-2 text-center mt-3">Join the great initiative with <span style="color: blue;">Life</span>
+        </h1>
+
+        <div class="row m-5">
+            <button class="btn btn-info rounded-1 col-lg-1 mx-auto" data-bs-toggle="modal"
+                data-bs-target="#Global-warming">
+                <h6>Explore</h6>
+            </button>
+        </div>
+    </div>
+
+
+
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="Global-warming" tabindex="-1" aria-labelledby="Global-warmingLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Global-warmingLabel">Grow</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center justify-content-center">
+                    <img class="col-lg-6 mb-1" src="../Images/Tree.webp" alt="">
+                    <p>
+                        "Join our initiative! Let's make a positive impact together by planting saplings at a minimal
+                        cost. Together, we can contribute to a greener future, combat deforestation, and create a
+                        healthier environment. Join us in this meaningful endeavor and let your small investment today
+                        grow into a flourishing tree tomorrow."
+                    </p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Enter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
 
 
 

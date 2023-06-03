@@ -1,0 +1,67 @@
+{
+    "section-1-cards":[
+        {
+            "id":1,
+            "paragraph":"Limited education in India hinders progress and development. Despite efforts, millions  lack quality education due to poverty, gender disparities, inadequate infrastructure and limited resources. This affects individuals, communities, and the nation. Without education, opportunities for growth and empowerment are limited. It also hampers India's global competitiveness and innovation. Closing education gaps and ensuring universal access to quality schooling are vital for a brighter future."
+            
+        },
+        {
+            "id":2,
+            "paragraph":"Elderly poverty in India poses challenges due to limited finances, lack of support, inadequate pension schemes, healthcare access, and social isolation; targeted measures like increased social welfare programs, healthcare assistance, and community support can alleviate their hardships."
+        },
+        {
+            "id":3,
+            "paragraph":"Poverty in India creates a challenging lifestyle with limited access to basic amenities, inadequate healthcare, substandard housing, and insufficient nutrition. Families struggle to make ends meet, living in overcrowded slums with poor sanitation. Lack of education and job opportunities perpetuates the cycle of poverty. Limited access to healthcare compromises well-being and increases vulnerability to diseases. Malnutrition and food insecurity hinder physical and cognitive development. Addressing poverty requires comprehensive efforts to enhance social safety nets, improve education and healthcare access, and foster inclusive economic growth. The goal is to uplift individuals and communities from destitution and provide a chance for a dignified and prosperous life."
+        }
+    ],
+    "Grow":[
+        {
+            "id":1,
+            "image":"../Images/badam.webp",
+            "name":"Badam Tree",
+            "cost":0.5
+        },
+        {
+            "id":2,
+            "image":"../Images/Banyan.webp",
+            "name":"Banyan Tree",
+            "cost":0.1
+        },
+        {
+            "id":3,
+            "image":"../Images/Coconut.webp",
+            "name":"Coconut Tree",
+            "cost":0.2
+        },
+        {
+            "id":4,
+            "image":"../Images/Jackfruit.webp",
+            "name":"Jackfruit Tree",
+            "cost":0.5
+        },
+        {
+            "id":5,
+            "image":"../Images/Mango.webp",
+            "name":"Mango Tree",
+            "cost":0.4
+        },
+        {
+            "id":6,
+            "image":"../Images/Neem.webp",
+            "name":"Neem Tree",
+            "cost":0.3
+        },
+        {
+            "id":7,
+            "image":"../Images/Neem.webp",
+            "name":"Neem Tree",
+            "cost":0.3
+        },
+        {
+            "id":8,
+            "image":"../Images/Neem.webp",
+            "name":"Neem Tree",
+            "cost":0.3
+        }
+    ]
+}
